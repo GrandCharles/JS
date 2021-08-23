@@ -1,0 +1,88 @@
+<div id="idNovaVaga" class="container">
+
+    <div class="row">
+
+        <div class="col-md-12">
+            <h1 class="text-center">Divulgue a vaga preenchendo o formulário</h1>
+        </div>
+
+        <div id="idFormBox" class="col-md-12">
+
+            <h2 aling="center">Preencha os Dados</h2>
+
+            <form action="/rt-vagas/nova-vaga" method="POST">
+
+                <div class="form-group">
+                    <label for="titulo">
+                        Título da Vaga:
+
+                        <input id="idTitulo" 
+                               name="titulo" 
+                               type="text" 
+                               class="form-control form-control-sm"
+                               placeholder="Digite o Título da Vaga" required>
+
+                        <small id="idTituloHelp" class="form-text text-muted">
+                            O Título é muito importante! Seja claro e objetivo.
+                        </small>
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label for="descricao">
+                        Descrição da Vaga:
+                        <textarea id="idDescricao" 
+                                  class="form-control form-control-sm" 
+                                  name="descricao" 
+                                  type="text"
+                                  placeholder="Descreva as atividades" 
+                                  required>
+                            </textarea>
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label for="empresa">
+                        Empresa:
+                        <input id="idEmpresa" 
+                               name="empresa" 
+                               type="text" 
+                               class="form-control form-control-sm"
+                               placeholder="Digite a Empresa Contratante" 
+                               required>
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">
+                        Email Contato:
+                        <input id="idEmail" 
+                               name="email" 
+                               type="email" 
+                               class="form-control form-control-sm"
+                            placeholder="Digite o Email" required>
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label for="salario">
+                        Salário:
+                        <input id="idSalario" 
+                               name="salario" 
+                               type="text" 
+                               maxlength="10" 
+                               onkeyup="formataValor(this)"
+                               class="form-control form-control-sm" 
+                               placeholder="Digite o Salário" required>
+                    </label>
+                </div>
+
+                <input type="hidden" name="novo" value="1">
+
+                <button type="submit" class="btn btn-primary">
+                    Salvar
+                </button>
+            </form>
+        </div>
+    </div>
+</div>

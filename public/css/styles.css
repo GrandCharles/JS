@@ -1,0 +1,308 @@
+/* todos */
+* {
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+}
+
+/* Nav */
+.navbar {
+    padding: 1rem;
+    border-bottom: 1px #ccc;
+}
+.navbar .nav-item a {
+    color: #212529;
+}
+.nav-item {
+    margin: 0 10px;
+}
+.navbar-expand-lg .navbar-nav .nav.link {
+    padding: 10px 25px;
+    font-weight: bold;
+}
+.navbar .nav-item  .btn {
+    color: #FFF;
+    background-color: #F03E3E;
+    border: 1px solid transparent;
+    border-radius: 0;
+}
+.nav-link.btn.btn-primary:hover,#idBuscaForm button:hover, #idListaVagas a:hover, #idFormBox button:hover { 
+    background-color: #fff;
+    color: #F03E3E;
+    border-color: #F03E3E;
+}
+
+/* Banner */
+#idTopContainer {
+    padding: 110px;
+    background-color: #f7f9fc ;
+    border-bottom: 4px solid;
+    margin-bottom: 30px;
+    background-image: url("../img/banner2.jpg");
+    background-position: 0 100px;
+    background-size: cover;
+    color: #fff;
+ }
+
+ #idMainTitle {
+     padding: 30px 0;
+     font-size: 3rem;
+ }
+#idMainSubTitle {
+    padding-bottom: 80px;
+    font-size: 1rem;
+}
+
+/* Form */
+#idBuscaForm {
+    padding: 30px 100px;
+}
+#idBuscaForm .col-md-10, #idBuscaForm .col-md-2 {
+    padding: 0;
+}
+#idBuscaForm input, #idBuscaForm button {
+    width: 100%;
+    border-radius: 0;
+    height: 50px;
+    font-size: 18px;
+}
+
+#idBuscaForm button {
+    color: #fff;
+    background-color: #F03E3E;
+    border: 1px solid transparent;
+}
+
+/* Lista */
+#idVagasContainer {
+    padding: 100px;
+    padding-bottom: 50px;
+}
+
+#idListaVagas .list-group-item {
+    margin-bottom: 8px;
+    border: 1px solid #ccc;
+    padding: 15px 80px;
+    color: #212529;
+    height: 120px;
+}
+
+#idListaVagas .list-group-item p {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+#idListaVagas .list-group-item.nova-vaga {
+    border: none;
+    background-color: #FFF7CC;
+}
+
+#idTituloListaVagas {
+    margin-bottom: 35px;
+}
+
+#idListaVagas img {
+    width: 80px;
+    border: 1px solid #212529;
+    border-radius: 50%;
+    background-color: #FFF;
+    position: absolute;
+    left: -40px;
+    top: calc(50% - 40px)
+}
+
+#idListaVagas a {
+    position: absolute;
+    right: 20px;
+    top: 35px;
+    height: 50px;
+    line-height: 35px;
+    background-color: #F03E3E;
+    border: 1px solid transparent;
+    border-radius: 0;
+    color: #FFF
+}
+
+.list-group-item .novaVagaLabel{
+    display: block;
+}
+
+.novaVagaLabel {
+    background-color: #FFD500;
+    color: #4D5154;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 5px 10px;
+    position: absolute;
+    right: 250px;
+    top: 40px;
+    display: none;
+}
+    
+/* ==================== novaVaga.html ========================= */
+
+#idNovaVaga {
+    margin-top: 100px;
+}
+#idNovaVaga h1 {
+    margin-bottom: 5px;
+}
+
+#idNovaVaga h2 {
+    margin-bottom: 5px;
+    color: #F03E3E;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+}
+#idNovaVaga form label {
+    font-weight: bold;
+}
+#idNovaVaga form input, #idNovaVaga form textarea {
+    border: 2px solid #CCC;
+    background-color: #F8F9FA;
+}
+
+#idFormBox {
+    padding: 50px;
+    box-shadow: 0 1px 5px rgba(0,0,0,.15);
+    border-radius: 4px;
+    background-color: #FFF;
+    margin-bottom: 50px;
+}
+
+#idFormBox button {
+    height: 50px;
+    width: 200px;
+    background-color: #F03E3E;
+    border: 1px solid transparent;
+    border-radius: 0;
+    margin-top: 20px;
+}
+
+/* ================= view-vagas ======================*/
+#idViewContainer {
+    margin-top: 100px;
+}
+#idViewContainer h1 {
+    margin-bottom: 30px;
+}
+#idImgContainer {
+    margin-bottom: 20px;
+    margin-bottom: 30px;
+}
+#idImgContainer img {
+    width: 100px;
+    border-radius: 50%;
+    border: 1px solid #212529;
+}
+
+.vaga-desc {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.main-color {
+    color: #F03E3E;
+}
+
+.back-link {
+    border: 1px solid #F03E3E;
+    padding: 5px 10px;
+    transition: .5s;
+}
+
+.back-link:hover {
+    background-color: #F03E3E;
+    color: #f7f9fc;
+    text-decoration: none;
+}
+
+/* ================= Responsivo ===================== */
+@media (max-width: 481px) {
+
+    /* navbar */
+    #navBarNav {
+        text-align: center;
+      }
+  
+    /* home */
+    #idTopContainer {
+        padding: 50px;
+        padding-top: 100px;
+      }
+    
+      #idMainTitle {
+        font-size: 2.2rem;
+      }
+    
+      #idMainSubTitle {
+        font-size: 1.5rem;
+      }
+    
+      #idBuscaForm {
+        padding: 0;
+      }
+    
+      #idVagasContainer {
+        padding: 20px;
+      }
+    
+      .list-group-item {
+        padding: 15px 85px;
+      }
+    
+      .list-group-item h2 {
+        font-size: 1.2rem;
+        width: 80%;
+      }
+    
+      .list-group-item img {
+        width: 50px;
+        left: 15px;
+        top: calc(50% - 25px);
+      }
+    
+      .nova-vaga .novaVagaLabel {
+        display: none;
+      }
+  
+    /* Nova-Vaga*/
+  
+    .back-link {
+        margin-left: 30px;
+      }
+    
+      #idViewContainer p {
+        font-size: 1.3rem;
+      }
+    
+      .vaga-desc {
+        width: 80%;
+      }
+    
+      /* add view */
+    
+      #idFormBox {
+        padding: 25px;
+      }
+    
+      #idFormBox h2 {
+        font-size: 1rem;
+        text-align: center;
+      }
+    
+      #idFormBox button {
+        width: 100%;
+      }
+  
+  
+  }   
+
+
+

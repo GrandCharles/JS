@@ -1,0 +1,26 @@
+vagas_online
+npm init
+------------------------------------------------
+npm install express 
+
+** Linguagem de templates
+npm install express-handlebars
+
+**  converter o body da requisição para vários formatos. Um desses formatos é json
+npm install body-parser
+
+** ORM
+npm install sequelize
+
+** BD
+npm install sqlite3
+------------------------------------------------------------------------------
+** Dependencia de desenvolvimento - Atualização imediata do servidor, sem precisar reiniciar o servidor a cada alteração
+npm install -D nodemon
+Em vez de node app.js
+
+** Executa o mesmo projeto pelo nodemon
+npm run dev
+----------------------------------------------------------------------------------
+https://sqlitebrowser.org/
+--------------------------------------------------------------------------------
